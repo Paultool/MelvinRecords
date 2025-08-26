@@ -1,0 +1,242 @@
+.servicios-container {
+  min-height: 100vh;
+  background-color: #121212;
+  color: #FFFFFF;
+  padding-top: 80px;
+}
+
+.servicios-header {
+  padding: 60px 20px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+}
+
+.servicios-hero {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.servicios-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #00FFFF, #FF00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.servicios-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #E0E0E0;
+  margin-bottom: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.servicios-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.servicio-card {
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.8) 0%, rgba(30, 30, 30, 0.9) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicio-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00FFFF, #FF00FF);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+}
+
+.servicio-card:hover::before {
+  transform: scaleX(1);
+}
+
+.servicio-header {
+  margin-bottom: 20px;
+}
+
+.servicio-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin: 0 0 15px 0;
+}
+
+.servicio-descripcion {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #E0E0E0;
+  margin-bottom: 20px;
+}
+
+.servicio-caracteristicas {
+  margin-top: 20px;
+}
+
+.servicio-caracteristicas h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FF00FF;
+  margin: 0 0 10px 0;
+}
+
+.servicio-caracteristicas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.servicio-caracteristicas li {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #CCCCCC;
+  padding: 5px 0 5px 20px;
+  position: relative;
+}
+
+.servicio-caracteristicas li::before {
+  content: '▶';
+  color: #00FFFF;
+  font-size: 0.7rem;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.servicios-cta {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.cta-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #E0E0E0;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #00FFFF, #FF00FF);
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .servicios-title {
+    font-size: 2.5rem;
+  }
+  
+  .servicios-description {
+    font-size: 1.1rem;
+  }
+  
+  .servicios-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .servicio-card {
+    padding: 25px;
+  }
+  
+  .servicios-cta {
+    padding: 30px 20px;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios-container {
+    padding-top: 60px;
+  }
+  
+  .servicios-header {
+    padding: 40px 15px 30px;
+  }
+  
+  .servicios-title {
+    font-size: 2rem;
+  }
+  
+  .servicios-content {
+    padding: 30px 15px;
+  }
+  
+  .servicio-card {
+    padding: 20px;
+  }
+}

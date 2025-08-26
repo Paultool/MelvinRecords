@@ -1,0 +1,420 @@
+.cuenca-container {
+  min-height: 100vh;
+  background-color: #121212;
+  color: #FFFFFF;
+  padding-top: 80px;
+}
+
+.cuenca-header {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+}
+
+.cuenca-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #CCCCCC;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #00FFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #FF00FF;
+}
+
+.separator {
+  margin: 0 10px;
+  color: #666666;
+}
+
+.cuenca-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #00FFFF, #FF00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.cuenca-meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cuenca-type,
+.cuenca-year {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.cuenca-type {
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #00FFFF;
+}
+
+.cuenca-year {
+  background: rgba(45, 45, 45, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+.cuenca-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.cuenca-description {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.description-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-bottom: 20px;
+}
+
+.lead-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #E0E0E0;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.description-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #CCCCCC;
+  margin-bottom: 20px;
+}
+
+.cuenca-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.8) 0%, rgba(30, 30, 30, 0.9) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.image-container:hover {
+  border-color: rgba(0, 255, 255, 0.4);
+  transform: scale(1.02);
+}
+
+.image-text {
+  font-family: 'Inter', sans-serif;
+  color: #666666;
+  font-style: italic;
+}
+
+.cuenca-awards {
+  margin-bottom: 60px;
+}
+
+.cuenca-awards h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.award-card {
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.8) 0%, rgba(30, 30, 30, 0.9) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+}
+
+.award-icon {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.award-content h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #E0E0E0;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cuenca-tecnologias {
+  margin-bottom: 60px;
+}
+
+.cuenca-tecnologias h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-bottom: 20px;
+}
+
+.cuenca-tecnologias p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #CCCCCC;
+  margin-bottom: 30px;
+}
+
+.tecnologias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tech-card {
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.1));
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+.tech-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #00FFFF;
+  font-size: 0.9rem;
+}
+
+.cuenca-impact {
+  margin-bottom: 60px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.impact-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FF00FF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.impact-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #E0E0E0;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cuenca-specs {
+  margin-bottom: 60px;
+}
+
+.cuenca-specs h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-bottom: 30px;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.spec-item {
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.8) 0%, rgba(30, 30, 30, 0.9) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.spec-item:hover {
+  border-color: rgba(0, 255, 255, 0.4);
+}
+
+.spec-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FF00FF;
+  margin: 0 0 10px 0;
+}
+
+.spec-item p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #E0E0E0;
+  margin: 0;
+}
+
+.cuenca-related h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00FFFF;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.related-card {
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.8) 0%, rgba(30, 30, 30, 0.9) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+}
+
+.related-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FF00FF;
+  margin: 0 0 10px 0;
+}
+
+.related-card p {
+  font-family: 'Inter', sans-serif;
+  color: #CCCCCC;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cuenca-title {
+    font-size: 2.5rem;
+  }
+  
+  .cuenca-description {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .cuenca-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .awards-grid,
+  .specs-grid,
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cuenca-impact {
+    padding: 25px;
+  }
+  
+  .tecnologias-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cuenca-container {
+    padding-top: 60px;
+  }
+  
+  .cuenca-header {
+    padding: 30px 15px;
+  }
+  
+  .cuenca-title {
+    font-size: 2rem;
+  }
+  
+  .cuenca-content {
+    padding: 30px 15px;
+  }
+  
+  .award-card,
+  .spec-item,
+  .related-card {
+    padding: 20px;
+  }
+  
+  .cuenca-impact {
+    padding: 20px 15px;
+  }
+}

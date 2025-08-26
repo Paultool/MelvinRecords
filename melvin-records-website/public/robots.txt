@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Directorio de sitemap
+Sitemap: https://www.melvinrecords.com/sitemap.xml
+
+# Optimización para buscadores
+Allow: /proyectos
+Allow: /documentales
+Allow: /servicios
+Allow: /contacto
+Allow: /sobre-nosotros
+Allow: /musica
+Allow: /audiovisual
+Allow: /hacklab
+Allow: /net-art
+Allow: /educacion
+
+# Evitar indexación de archivos técnicos
+Disallow: /static/
+Disallow: /_next/
+Disallow: /api/
+Disallow: /*.json$
+
+# Tiempo de espera recomendado (en segundos)
+Crawl-delay: 1
