@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Directorio de sitemap
-Sitemap: https://www.melvinrecords.com/sitemap.xml
+Sitemap: https://www.melvinrecords.gt.tc/sitemap.xml
 
 # Optimización para buscadores
 Allow: /proyectos

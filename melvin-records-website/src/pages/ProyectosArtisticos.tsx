@@ -79,7 +79,7 @@ const ProyectosArtisticos = () => {
         <title>Proyectos Artísticos | Instalaciones Video-Arte y Transmedia | Melvin Records</title>
         <meta name="description" content="Instalaciones de video-arte, proyectos transmedia y exploraciones artísticas. Invasion, ATL, Cuerpos de agua. Arte experimental contemporáneo México." />
         <meta name="keywords" content="video arte México, instalaciones artísticas, arte transmedia, Invasion instalación, ATL proyecto, Pablo Benjamín Nieto Mercado" />
-        <link rel="canonical" href="https://melvinrecords.com/proyectos-artisticos" />
+        <link rel="canonical" href="https://melvinrecords.gt.tc/proyectos-artisticos" />
         
         <script type="application/ld+json">
           {JSON.stringify({

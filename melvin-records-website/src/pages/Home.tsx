@@ -18,14 +18,14 @@ const Home = () => {
       title: 'La cuenca de los ríos de piedra',
       category: 'Documental',
       description: 'Transformación urbana de CDMX a través de 4 testimonios de memoria del agua',
-      image: '/images/experimental_video_art_installation_dark_gallery.jpg',
+      image: '/images/lacuenca16.webp',
       href: '/proyectos/la-cuenca-de-los-rios-de-piedra'
     },
     {
-      title: 'Invasion',
+      title: 'Invasion  ',
       category: 'Instalación / Performance',
       description: 'Exploración de la relación destructiva humanidad-medio ambiente',
-      image: '/images/video_art_installation_projections_dark_gallery.jpg',
+      image: '/images/invasion-min.jpg',
       href: '/proyectos/invasion'
     },
     {
@@ -39,7 +39,7 @@ const Home = () => {
       title: 'Hacklab La Resistencia',
       category: 'Laboratorio Tecnológico',
       description: 'Espacio de experimentación, residencias artísticas y educación digital',
-      image: '/images/minimal-modern-technology-lab-workspace-setup.jpg',
+      image: '/images/hacklab_la_resistencia.jpg',
       href: '/hacklab'
     }
   ]

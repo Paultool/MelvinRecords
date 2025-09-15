@@ -15,11 +15,11 @@ const CuerposDeAgua: React.FC = () => {
         <meta property="og:title" content="Cuerpos de Agua - Melvin Records" />
         <meta property="og:description" content="Instalación audiovisual interactiva que explora la relación entre el ser humano y los ecosistemas acuáticos." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.melvinrecords.com/proyectos/cuerpos-de-agua" />
+        <meta property="og:url" content="https://www.melvinrecords.gt.tc/proyectos/cuerpos-de-agua" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cuerpos de Agua - Melvin Records" />
         <meta name="twitter:description" content="Instalación audiovisual interactiva que explora la relación entre el ser humano y los ecosistemas acuáticos." />
-        <link rel="canonical" href="https://www.melvinrecords.com/proyectos/cuerpos-de-agua" />
+        <link rel="canonical" href="https://www.melvinrecords.gt.tc/proyectos/cuerpos-de-agua" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -33,7 +33,7 @@ const CuerposDeAgua: React.FC = () => {
               "name": "Melvin Records",
               "foundingDate": "2008"
             },
-            "url": "https://www.melvinrecords.com/proyectos/cuerpos-de-agua",
+            "url": "https://www.melvinrecords.gt.tc/proyectos/cuerpos-de-agua",
             "keywords": "instalación, audiovisual, interactivo, agua, ecosistemas"
           })}
         </script>

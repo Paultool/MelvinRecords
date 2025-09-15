@@ -43,6 +43,17 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0WQQDFX022"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0WQQDFX022');
+    </script>
+    <!-- End Google Analytics -->
+
     <!-- Structured Data - Organization & MusicGroup Schema -->
     <script type="application/ld+json">
     {
@@ -67,7 +78,7 @@
         "postalCode": "54958"
       },
       "url": "https://melvinrecords.gt.tc",
-      "logo": "https://melvinrecords.gt.tc/images/melvin-records-logo.png",
+      "logo": "https://melvinrecords.gt.tc/images/melvin-records-logo.jpg",
       "sameAs": [
         "https://melvinrecords.bandcamp.com/",
         "https://www.instagram.com/melvinrecords/",
@@ -81,7 +92,7 @@
       },
       "knowsAbout": [
         "Música Experimental",
-        "Arte Transmedia", 
+        "Arte Transmedia",
         "Documentales Independientes",
         "Net Art",
         "Instalaciones Sonoras",
@@ -115,7 +126,42 @@
             "itemOffered": {
               "@type": "Course",
               "name": "Cursos de Tecnología Musical",
-              "description": "Educación especializada en producción musical y arte digital"
+              "description": "Educación especializada en producción musical y arte digital",
+              "provider": {
+                "@type": "Organization",
+                "name": "Melvin Records",
+                "url": "https://melvinrecords.gt.tc"
+              },
+              "offers": {
+                "@type": "Offer",
+                "category": "Paid",
+                "priceCurrency": "MXN",
+                "price": 99.99
+              },
+              "hasCourseInstance": [
+                {
+                  "@type": "CourseInstance",
+                  "courseMode": "Onsite",
+                  "location": {
+                    "@type": "Place",
+                    "name": "Tultitlán de Mariano Escobedo, Estado de México, México"
+                  },
+                  "courseSchedule": {
+                    "@type": "Schedule",
+                    "duration": "PT5H",
+                    "repeatCount": 4,
+                    "repeatFrequency": "Weekly",
+                    "startDate": "2025-08-01",
+                    "endDate": "2025-08-31"
+                  },
+                  "instructor": {
+                    "@type": "Person",
+                    "name": "Pablo Nieto Mercado",
+                    "description": "Melvin Records Founder and Lead Producer",
+                    "image": "https://melvinrecords.gt.tc/images/pablonietomercado.jpg"
+                  }
+                }
+              ]
             }
           }
         ]
@@ -127,6 +173,7 @@
       }
     }
     </script>
+
   </head>
   <body class="bg-zinc-950 text-zinc-200 font-inter antialiased">
     <div id="root"></div>

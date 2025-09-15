@@ -14,7 +14,7 @@ const Audiovisual = () => {
       title: 'La cuenca de los ríos de piedra',
       subtitle: 'Memoria del agua en Ciudad de México',
       year: '2019',
-      duration: '75 min',
+      duration: '82 min',
       type: 'Largometraje documental',
       director: 'Pablo Benjamín Nieto Mercado',
       description: 'Un viaje por la transformación urbana de la Ciudad de México a través de cuatro testimonios de quienes vivieron la desaparición del agua: ríos entubados, lagos desecados y canales que se convirtieron en calles. La película explora cómo la infraestructura urbana transformó el paisaje hídrico de la capital mexicana.',
@@ -84,7 +84,7 @@ const Audiovisual = () => {
       type: 'Cortometraje experimental',
       director: 'Melvin Records',
       description: 'Una exploración visual experimental que reflexiona sobre la invasión tecnológica en los espacios urbanos contemporáneos. La pieza combina elementos de videoarte con narrativa experimental.',
-      image: '/images/melvin_records_invasion_2.jpg',
+      image: '/images/invasion-min.jpg',
       videoUrl: 'https://youtu.be/FbqHY14n1TI',
       featured: false,
       awards: [

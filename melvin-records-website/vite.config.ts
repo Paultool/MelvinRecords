@@ -4,6 +4,7 @@ import { defineConfig } from "vite"
 import sourceIdentifierPlugin from 'vite-plugin-source-info'
 
 const isProd = process.env.BUILD_MODE === 'prod'
+
 export default defineConfig({
   plugins: [
     react(), 
@@ -18,5 +19,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist',       // directorio de salida
+    target: 'es2018',     // compatible con Puppeteer
+  }
 })
-

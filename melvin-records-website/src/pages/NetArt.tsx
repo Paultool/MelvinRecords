@@ -82,7 +82,7 @@ const NetArt = () => {
         <title>Net Art | Arte Digital Web y Instalaciones Interactivas | Melvin Records</title>
         <meta name="description" content="Net art y arte digital: instalaciones web interactivas, espacios sonoros digitales, arqueología web. Proyectos de arte experimental en internet." />
         <meta name="keywords" content="net art México, arte digital web, instalaciones interactivas, p5.js, WebGL, arte experimental internet" />
-        <link rel="canonical" href="https://melvinrecords.com/net-art" />
+        <link rel="canonical" href="https://melvinrecords.gt.tc/net-art" />
         
         <script type="application/ld+json">
           {JSON.stringify({

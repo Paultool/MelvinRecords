@@ -1,134 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Página principal -->
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.melvinrecords.com/</loc>
+    <loc>https://melvinrecords.gt.tc/#/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2025-08-21</lastmod>
   </url>
-  
-  <!-- Páginas principales -->
   <url>
-    <loc>https://www.melvinrecords.com/sobre-nosotros</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/proyectos</loc>
+    <loc>https://melvinrecords.gt.tc/#/musica</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2025-08-21</lastmod>
   </url>
-  
   <url>
-    <loc>https://www.melvinrecords.com/documentales</loc>
+    <loc>https://melvinrecords.gt.tc/#/audiovisual</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/musica</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/audiovisual</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/net-art</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/hacklab</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/educacion</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/servicios</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.melvinrecords.com/contacto</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
-  </url>
-  
-  <!-- Proyectos específicos -->
-  <url>
-    <loc>https://www.melvinrecords.com/proyectos/la-cuenca-de-los-rios-de-piedra</loc>
-    <changefreq>yearly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2025-08-21</lastmod>
   </url>
-  
   <url>
-    <loc>https://www.melvinrecords.com/proyectos/invasion</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://melvinrecords.gt.tc/#/proyectos-artisticos</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
   </url>
-  
   <url>
-    <loc>https://www.melvinrecords.com/proyectos/cuerpos-de-agua</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://melvinrecords.gt.tc/#/hacklab</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
   </url>
-  
   <url>
-    <loc>https://www.melvinrecords.com/proyectos/atl</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://melvinrecords.gt.tc/#/educacion</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
   </url>
-  
   <url>
-    <loc>https://www.melvinrecords.com/proyectos/microplastic-human-nature</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://melvinrecords.gt.tc/#/net-art</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
   </url>
-  
-  <!-- Documentales -->
   <url>
-    <loc>https://www.melvinrecords.com/documentales/cibertrip</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
+    <loc>https://melvinrecords.gt.tc/#/servicios</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
-  
   <url>
-    <loc>https://www.melvinrecords.com/documentales/cuenca-rios-piedra</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2025-08-21</lastmod>
+    <loc>https://melvinrecords.gt.tc/#/contacto</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
+  <!-- Sub-páginas de proyectos -->
+  <url>
+    <loc>https://melvinrecords.gt.tc/#/proyectos/invasion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://melvinrecords.gt.tc/#/proyectos/cuerpos-de-agua</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://melvinrecords.gt.tc/#/proyectos/la-cuenca-de-los-rios-de-piedra</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

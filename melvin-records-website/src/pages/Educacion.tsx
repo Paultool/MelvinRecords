@@ -31,7 +31,7 @@ const Educacion = () => {
       title: 'Documentales de Memoria',
       duration: '10 semanas',
       level: 'Intermedio',
-      modality: 'Presencial',
+      modality: 'Presencial + Online',
       price: '$4,200 MXN',
       description: 'Metodología para documentales de memoria urbana y social, desde investigación hasta postproducción.',
       topics: ['Investigación archivística', 'Entrevistas en profundidad', 'Narrativa no lineal', 'Montaje experimental'],
@@ -42,13 +42,43 @@ const Educacion = () => {
       title: 'Tecnologías Libres para Artistas',
       duration: '4 semanas',
       level: 'Principiante',
-      modality: 'Hacklab',
+      modality: 'Presencial + Online',
       price: '$1,800 MXN',
       description: 'Introducción a herramientas de software libre para creación artística: audio, video, web y fabricación digital.',
       topics: ['Ardour/Reaper', 'Blender', 'Linux audio', 'Impresión 3D'],
       nextStart: 'Enero 2025',
       image: '/images/minimal-modern-technology-lab-workspace-setup.jpg'
+    },
+    {
+      title: 'Dirty Mixer',
+      duration: '4 horas',
+      level: 'Intermedio',
+      modality: 'Presencial + Online',
+      price: '$400 MXN',
+      description: 'Taller práctico sobre técnicas de mezcla sucia y manipulación de señales analógicas y digitales, explorando la estética del error y la interferencia audiovisual.',
+      topics: ['Fundamentos de señal de video', 'Feedback visual y glitch', 'Interferencia entre dos fuentes', 'Sincronía y desincronía', 'Experimentación en vivo'],
+      nextStart: 'Mayo 2025',
+      image: '/images/dirty-mixer.jpg'
+    },
+    {
+      title: 'Mi Primer Arcade',
+      duration: '4 semanas',
+      level: 'Principiante',
+      modality: 'Presencial',
+      price: '$1000 MXN',
+      description: 'Taller DIY donde aprenderás a construir tu propia arcade funcional reutilizando una laptop en desuso, madera y un kit de controles. Incluye herramientas y tutorías personalizadas.',
+      topics: [
+        'Diseño en papel',
+        'Armado de estructura',
+        'Montaje de controles',
+        'Configuración de emulador y roms',
+        'Reutilización de laptop',
+        'Personalización y acabado'
+      ],
+      nextStart: 'Junio 2025',
+      image: '/images/arcade-diy.jpg'
     }
+    
   ]
 
   const talleres = [

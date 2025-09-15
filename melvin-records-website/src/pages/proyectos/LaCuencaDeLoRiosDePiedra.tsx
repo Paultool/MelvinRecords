@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { melvinData } from '../../data/melvinData';
 import './LaCuencaDeLoRiosDePiedra.css';
+import cuencaCover from "/images/poster-lacuenca.jpg"; // Asegúrate de tener esta imagen en la carpeta correcta
+
 
 const LaCuencaDeLoRiosDePiedra: React.FC = () => {
   const proyecto = melvinData.proyectos["la-cuenca-de-los-rios-de-piedra"];
@@ -73,10 +75,12 @@ const LaCuencaDeLoRiosDePiedra: React.FC = () => {
                 creando una experiencia cinematográfica única que ha sido reconocida internacionalmente.
               </p>
             </div>
-            <div className="cuenca-image-placeholder">
-              <div className="image-container">
-                <span className="image-text">Imagen del proyecto</span>
-              </div>
+            <div className="cuenca-image">
+              <img
+                src={cuencaCover}
+                alt="Portada del proyecto La Cuenca de los Ríos de Piedra"
+                className="w-full max-w-4xl rounded-lg shadow-lg mx-auto"
+              />
             </div>
           </section>
 

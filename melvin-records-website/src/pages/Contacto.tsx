@@ -14,6 +14,7 @@ const Contacto: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
+  // Manejo de inputs
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -22,16 +23,41 @@ const Contacto: React.FC = () => {
     }));
   };
 
+  // Validación simple
+  const validateForm = () => {
+    if (!formData.nombre || !formData.email || !formData.asunto || !formData.mensaje) {
+      alert('Todos los campos son obligatorios');
+      return false;
+    }
+    const emailRegex = /\S+@\S+\.\S+/;
+    if (!emailRegex.test(formData.email)) {
+      alert('Email inválido');
+      return false;
+    }
+    return true;
+  };
+
+  // Envío al backend
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validateForm()) return;
+
     setIsSubmitting(true);
-    
-    // Simulación de envío de formulario
+    setSubmitStatus('idle');
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      if (!response.ok) throw new Error('Error enviando correo');
+
       setSubmitStatus('success');
       setFormData({ nombre: '', email: '', asunto: '', mensaje: '' });
-    } catch (error) {
+    } catch (err) {
+      console.error(err);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -44,31 +70,6 @@ const Contacto: React.FC = () => {
         <title>Contacto - Melvin Records | Colectivo Artístico Multidisciplinario</title>
         <meta name="description" content="Contacta a Melvin Records para colaboraciones, proyectos artísticos y servicios de producción audiovisual. Colectivo artístico mexicano fundado en 2008." />
         <meta name="keywords" content="contacto, Melvin Records, colaboraciones, proyectos artísticos, México, producción audiovisual" />
-        <meta property="og:title" content="Contacto - Melvin Records" />
-        <meta property="og:description" content="Contacta a Melvin Records para colaboraciones y proyectos artísticos." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.melvinrecords.gt.tc/contacto" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contacto - Melvin Records" />
-        <meta name="twitter:description" content="Contacta a Melvin Records para colaboraciones y proyectos artísticos." />
-        <link rel="canonical" href="https://www.melvinrecords.gt.tc/contacto" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            "name": "Contacto - Melvin Records",
-            "description": "Página de contacto de Melvin Records",
-            "url": "https://www.melvinrecords.gt.tc/contacto",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "Melvin Records",
-              "foundingDate": "2008",
-              "email": contacto.email,
-              "url": "https://www.melvinrecords.gt.tc",
-              "sameAs": contacto.redesSociales?.map(red => red.url) || []
-            }
-          })}
-        </script>
       </Helmet>
 
       <div className="contacto-container">
@@ -86,7 +87,6 @@ const Contacto: React.FC = () => {
           <div className="contacto-grid">
             <section className="contacto-info">
               <h2>Información de Contacto</h2>
-              
               <div className="info-card">
                 <h3>Email</h3>
                 <a href={`mailto:${contacto.email}`} className="contact-link">
@@ -140,7 +140,6 @@ const Contacto: React.FC = () => {
 
             <section className="contacto-form-section">
               <h2>Envíanos un Mensaje</h2>
-              
               <form onSubmit={handleSubmit} className="contacto-form">
                 <div className="form-group">
                   <label htmlFor="nombre">Nombre *</label>
@@ -152,6 +151,7 @@ const Contacto: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     className="form-input"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -165,6 +165,7 @@ const Contacto: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     className="form-input"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -177,14 +178,15 @@ const Contacto: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     className="form-select"
+                    disabled={isSubmitting}
                   >
                     <option value="">Selecciona un asunto</option>
-                    <option value="colaboracion">Colaboración Artística</option>
-                    <option value="servicios">Servicios de Producción</option>
-                    <option value="talleres">Talleres y Cursos</option>
-                    <option value="exhibicion">Exhibición de Obra</option>
-                    <option value="prensa">Prensa y Medios</option>
-                    <option value="otro">Otro</option>
+                    <option value="Colaboración Artística">Colaboración Artística</option>
+                    <option value="Servicios de Producción">Servicios de Producción</option>
+                    <option value="Talleres y Cursos">Talleres y Cursos</option>
+                    <option value="Exhibición de Obra">Exhibición de Obra</option>
+                    <option value="Prensa y Medios">Prensa y Medios</option>
+                    <option value="Otro">Otro</option>
                   </select>
                 </div>
 
@@ -199,6 +201,7 @@ const Contacto: React.FC = () => {
                     rows={6}
                     className="form-textarea"
                     placeholder="Cuéntanos sobre tu proyecto o consulta..."
+                    disabled={isSubmitting}
                   />
                 </div>
 

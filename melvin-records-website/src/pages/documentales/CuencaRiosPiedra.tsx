@@ -97,7 +97,7 @@ const CuencaRiosPiedra = () => {
         <title>La cuenca de los ríos de piedra (2019) | Documental | Melvin Records</title>
         <meta name="description" content="Documental premiado sobre la transformación de ríos y lagos de Ciudad de México. 4 testimonios de memoria del agua urbana. Primer lugar FINI 2022, Social Impact Award USA 2022." />
         <meta name="keywords" content="La cuenca de los ríos de piedra, documental CDMX, memoria agua Ciudad México, ríos entubados, Lago Texcoco, Melvin Records, FINI 2022" />
-        <link rel="canonical" href="https://melvinrecords.com/audiovisual/documentales/cuenca-rios-piedra" />
+        <link rel="canonical" href="https://melvinrecords.gt.tc/audiovisual/documentales/cuenca-rios-piedra" />
         
         <script type="application/ld+json">
           {JSON.stringify({

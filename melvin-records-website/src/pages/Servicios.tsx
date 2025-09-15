@@ -15,17 +15,17 @@ const Servicios: React.FC = () => {
         <meta property="og:title" content="Servicios - Melvin Records" />
         <meta property="og:description" content="Servicios profesionales de producción audiovisual, diseño y arte digital de Melvin Records." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.melvinrecords.com/servicios" />
+        <meta property="og:url" content="https://www.melvinrecords.gt.tc/servicios" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Servicios - Melvin Records" />
         <meta name="twitter:description" content="Servicios profesionales de producción audiovisual, diseño y arte digital de Melvin Records." />
-        <link rel="canonical" href="https://www.melvinrecords.com/servicios" />
+        <link rel="canonical" href="https://www.melvinrecords.gt.tc/servicios" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Melvin Records",
-            "url": "https://www.melvinrecords.com",
+            "url": "https://www.melvinrecords.gt.tc",
             "foundingDate": "2008",
             "description": "Colectivo artístico multidisciplinario mexicano especializado en producción audiovisual y arte digital",
             "offers": servicios.lista.map(servicio => ({

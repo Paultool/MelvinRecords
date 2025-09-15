@@ -25,11 +25,19 @@ const Hacklab = () => {
 
   const proyectosActivos = [
     {
+      id: 'estilo-vida-graff',
+      title: 'Estilo de Vida Graff',
+      description: 'Videocast colaborativo sobre graffiti y cultura urbana, transmitido desde Hacklab La Resistencia. Presentado por Sid Videk y producido junto a Pablo Nieto, muestra el talento emergente del Estado de México a través de entrevistas y episodios documentales.',
+      status: 'Activo',
+      participants: 'Artistas urbanos invitados',
+      link: 'hacklab/proyectos/estilo-vida-graff'
+    },
+    {
       title: 'Visionarios Creativos Live',
       description: 'Sesiones de música experimental en vivo transmitidas desde el hacklab',
       status: 'Activo',
       participants: '5-8 artistas',
-      link: '/musica/artistas/visionarios-creativos'
+      link: '/hacklab/proyectos/visionarios-creativos'
     },
     {
       title: 'Red Mesh Comunitaria',
